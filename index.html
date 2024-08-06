@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limits of a Function Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Limits of a Function Quiz</h1>
+        <p>Please read the instructions carefully before starting the quiz:</p>
+        <ul>
+            <li>Each question carries equal marks.</li>
+            <li>Select the correct answer from the given options.</li>
+            <li>Submit your answers once you have completed all the questions.</li>
+            <li>You will receive instant feedback on your answers.</li>
+        </ul>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Find the limit: \( \lim_{{x \to 2}} (3x^2 - 5x + 2) \)</p>
+                <label><input type="radio" name="q1" value="a"> 4</label>
+                <label><input type="radio" name="q1" value="b"> 2</label>
+                <label><input type="radio" name="q1" value="c"> 6</label>
+                <label><input type="radio" name="q1" value="d"> 8</label>
+            </div>
+            <div class="question">
+                <p>2. Evaluate \( \lim_{{x \to 0}} \frac{{\sin x}}{{x}} \)</p>
+                <label><input type="radio" name="q2" value="a"> 1</label>
+                <label><input type="radio" name="q2" value="b"> 0</label>
+                <label><input type="radio" name="q2" value="c"> -1</label>
+                <label><input type="radio" name="q2" value="d"> Infinity</label>
+            </div>
+            <div class="question">
+                <p>3. Determine \( \lim_{{x \to \infty}} \frac{{2x^2 - 3x + 1}}{{x^2 + 5}} \)</p>
+                <label><input type="radio" name="q3" value="a"> 0</label>
+                <label><input type="radio" name="q3" value="b"> 2</label>
+                <label><input type="radio" name="q3" value="c"> -3</label>
+                <label><input type="radio" name="q3" value="d"> Infinity</label>
+            </div>
+            <div class="question">
+                <p>4. Compute \( \lim_{{x \to 1}} \frac{{x^3 - 1}}{{x - 1}} \)</p>
+                <label><input type="radio" name="q4" value="a"> 0</label>
+                <label><input type="radio" name="q4" value="b"> 1</label>
+                <label><input type="radio" name="q4" value="c"> 3</label>
+                <label><input type="radio" name="q4" value="d"> 2</label>
+            </div>
+            <div class="question">
+                <p>5. Find the limit: \( \lim_{{x \to 0^+}} \ln x \)</p>
+                <label><input type="radio" name="q5" value="a"> 0</label>
+                <label><input type="radio" name="q5" value="b"> -Infinity</label>
+                <label><input type="radio" name="q5" value="c"> Infinity</label>
+                <label><input type="radio" name="q5" value="d"> 1</label>
+            </div>
+            <div class="question">
+                <p>6. Determine \( \lim_{{x \to 0}} \frac{{e^x - 1}}{{x}} \)</p>
+                <label><input type="radio" name="q6" value="a"> 0</label>
+                <label><input type="radio" name="q6" value="b"> 1</label>
+                <label><input type="radio" name="q6" value="c"> Infinity</label>
+                <label><input type="radio" name="q6" value="d"> e</label>
+            </div>
+            <div class="question">
+                <p>7. Evaluate \( \lim_{{x \to 0}} \frac{{\tan x}}{{x}} \)</p>
+                <label><input type="radio" name="q7" value="a"> 0</label>
+                <label><input type="radio" name="q7" value="b"> 1</label>
+                <label><input type="radio" name="q7" value="c"> -1</label>
+                <label><input type="radio" name="q7" value="d"> Infinity</label>
+            </div>
+            <div class="question">
+                <p>8. Compute \( \lim_{{x \to \infty}} (x - \sqrt{x^2 + 1}) \)</p>
+                <label><input type="radio" name="q8" value="a"> 0</label>
+                <label><input type="radio" name="q8" value="b"> -1</label>
+                <label><input type="radio" name="q8" value="c"> 1</label>
+                <label><input type="radio" name="q8" value="d"> Infinity</label>
+            </div>
+            <div class="question">
+                <p>9. Find the limit: \( \lim_{{x \to \infty}} \frac{{\ln x}}{{x}} \)</p>
+                <label><input type="radio" name="q9" value="a"> 0</label>
+                <label><input type="radio" name="q9" value="b"> 1</label>
+                <label><input type="radio" name="q9" value="c"> Infinity</label>
+                <label><input type="radio" name="q9" value="d"> -Infinity</label>
+            </div>
+            <div class="question">
+                <p>10. Evaluate \( \lim_{{x \to 0}} \frac{{\sin x}}{{x}} \cdot \frac{{1 - \cos x}}{{x^2}} \)</p>
+                <label><input type="radio" name="q10" value="a"> 0</label>
+                <label><input type="radio" name="q10" value="b"> 1</label>
+                <label><input type="radio" name="q10" value="c"> Infinity</label>
+                <label><input type="radio" name="q10" value="d"> -Infinity</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit Answers</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
